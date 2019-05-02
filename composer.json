@@ -1,0 +1,47 @@
+{
+    "name": "diamondbybold/laravel-flysystem-azure-blob-storage",
+    "description": "Laravel Wrapper for Flysystem Azure Blob Storage",
+    "keywords": [
+        "diamondbybold",
+        "laravel",
+        "flysystem",
+        "azure",
+        "blob",
+        "storage",
+        "laravel-flysystem-azure-blob-storage"
+    ],
+    "homepage": "https://github.com/diamondbybold/laravel-flysystem-azure-blob-storage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "João Machado",
+            "email": "joaomachado@diamondbybold.com",
+            "homepage": "https://diamondbybold.com",
+            "role": "Lead Web Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "~5.7|~5.8",
+        "league/flysystem-azure-blob-storage": "^0.1.5"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DiamondByBOLD\\FlysystemAzureBlobStorage\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DiamondByBOLD\\FlysystemAzureBlobStorage\\FlysystemAzureBlobStorageServiceProvider"
+            ]
+        }
+    }
+}
