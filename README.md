@@ -38,6 +38,7 @@ Configure your disk in `config/filesystem.php`
                 'name' => env('AZURE_ACCOUNT_NAME'),
                 'key' => env('AZURE_ACCOUNT_KEY'),
             ],
+            'url' => env('AZURE_STORAGE_URL', null),
             'endpoint-suffix' => env('AZURE_ENDPOINT_SUFFIX', 'core.windows.net'),
             'container' => env('AZURE_CONTAINER', 'public')
         ]
