@@ -6,7 +6,6 @@ use League\Flysystem\Filesystem;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use League\Flysystem\AzureBlobStorage\AzureBlobStorageAdapter;
 
 class FlysystemAzureBlobStorageServiceProvider extends ServiceProvider
 {
