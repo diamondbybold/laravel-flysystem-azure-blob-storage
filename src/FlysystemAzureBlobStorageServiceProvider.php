@@ -26,7 +26,7 @@ class FlysystemAzureBlobStorageServiceProvider extends ServiceProvider
 
             $client = BlobRestProxy::createBlobService($connectionString);
 
-            return new Filesystem(new AzureBlobStorageAdapter($client, $config['container']));
+            return new Filesystem(new AzureBlobStorageAdapter($client, $config['container'], ($config['prefix'] ?? null)));
         });
     }
 
